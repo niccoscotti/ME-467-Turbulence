@@ -1,11 +1,12 @@
 %% --- Clear workspace ---
 clc;
 clear;
-addpath("../functions/");
+addpath("functions/");
 
 
 %% --- Common setup ---
 % Define any quantity you need for this part in here
+params.fileName = "veldata.txt";
 params.plot.fontSize = 14;
 params.plot.legendFontSize = 12;
 params.plot.insetFontSize = 10;

@@ -22,7 +22,7 @@ function [autoCorr] = autocorrelation(velocity, dl, lmax)
     maxLagIndex = min(maxLagIndex, N-1); % Prevent exceeding signal length
     
     autoCorr = C_full(1:maxLagIndex+1)';
-    normalization = 1;                   % Make sure to fill in the 
+    normalization = mean(velocity.^2);                   % Make sure to fill in the 
                                          % appropriate normalization here
     autoCorr = autoCorr / normalization;
     
