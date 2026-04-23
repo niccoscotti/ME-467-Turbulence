@@ -3,7 +3,6 @@ clc;
 clear;
 addpath("functions");
 
-
 %% --- Common setup ---
 % Define any quantity you need for this part in here
 params.fileName = "veldata.txt";
@@ -26,6 +25,7 @@ params.L = 5;
 warning('Make sure to properly fill the above parameters')
 
 fprintf("Mean velocity U: %f m/s \n", params.U)
+
 %% --- Plot A ---
 plotA = figure();
 hold on; grid on;
