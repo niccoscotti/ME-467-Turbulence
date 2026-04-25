@@ -22,9 +22,8 @@ params.U = U;
 params.x = params.U*params.t;
 % Assume 5 meters of distance from grid to hotwire
 params.L = 5;
-warning('Make sure to properly fill the above parameters')
 
-fprintf("Mean velocity U: %f m/s \n", params.U)
+fprintf("Mean velocity U: %0.4f m/s \n", params.U)
 
 %% --- Plot A ---
 plotA = figure();
@@ -53,5 +52,4 @@ saveas(plotA, 'figures/part1-plotA.png')
 %% --- Turbulence intensity ---
 params.I = sqrt(mean(u.^2))/U;
 
-fprintf("Turbulence intensity I: %f %% \n", params.I*100)
-warning('Make sure to fill the turbulence intensity value');
+fprintf("Turbulence intensity I: %0.4f \n", params.I)

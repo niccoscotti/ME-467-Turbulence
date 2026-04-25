@@ -25,6 +25,4 @@ function [autoCorr] = autocorrelation(velocity, dl, lmax)
     normalization = mean(velocity.^2);   % Make sure to fill in the 
                                          % appropriate normalization here
     autoCorr = autoCorr / normalization;
-    
-    warning('Make sure to fill in the appropriate normalization')
 end
